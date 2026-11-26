@@ -47,6 +47,23 @@
       <div class="download-grid">
         <article class="download-card windows-card"><div class="card-top"><span class="platform-icon windows-icon" aria-hidden="true">⊞</span><span class="mini-badge windows-badge">Windows</span></div><h3>نظام الكمبيوتر — Windows</h3><p>لمراكز الصيانة والإدارة وغرفة العمليات والحاسبات الإضافية.</p><div class="version-block"><span>أحدث إصدار منشور</span><strong id="windows-version">جارٍ التحقق…</strong><small id="windows-details">يتم الاتصال بخدمة الإصدارات</small></div><a id="windows-download" class="button card-button disabled" href="#التحميل" aria-disabled="true" tabindex="-1">التحقق من رابط التحميل <span>↓</span></a><p class="card-footnote" id="windows-note">ثبّت النسخة الجديدة فوق القديمة، ولا تحذف البرنامج للحفاظ على التفعيل.</p></article>
 
+        <!-- برنامج مستقل: رابط ثابت، لا يعتمد على Supabase أو خدمة التحديثات -->
+        <article class="download-card windows-card" id="برنامج-المحطات-اوفلاين">
+          <div class="card-top">
+            <span class="platform-icon windows-icon" aria-hidden="true">▦</span>
+            <span class="mini-badge">Windows · Offline</span>
+          </div>
+          <h3>نظام المحطات المستقل — بدون إنترنت</h3>
+          <p>برنامج منفصل خاص بالمحطات والمغذيات والمحولات. يعمل محلياً بعد تثبيته، ولا يرتبط بتحديثات نظام الحوادث.</p>
+          <div class="version-block">
+            <span>ملف تثبيت مستقل</span>
+            <strong>لا يحتاج إنترنت أثناء العمل</strong>
+            <small>Windows · ملف E_setup.exe · حوالي 11 ميغابايت</small>
+          </div>
+          <a class="button card-button" href="stations-offline.html">التعرّف على البرنامج وتحميله <span>↗</span></a>
+          <p class="card-footnote">تنزيل ثابت — لا يرتبط بخدمة التحديثات التلقائية لبرنامج إدارة الحوادث.</p>
+        </article>
+
         <article class="download-card android-card"><div class="card-top"><span class="platform-icon android-icon" aria-hidden="true">▣</span><span class="mini-badge">Android</span></div><h3>تطبيق الأندرويد</h3><p>للمخولين وفرق الميدان وربط البلاغات والبيانات التشغيلية.</p><div class="version-block"><span>أحدث إصدار منشور</span><strong id="android-version">جارٍ التحقق…</strong><small id="android-details">يتم الاتصال بخدمة الإصدارات</small></div><a id="android-download" class="button card-button disabled" href="#التحميل" aria-disabled="true" tabindex="-1">التحقق من رابط التحميل <span>↓</span></a><p class="card-footnote" id="android-note">يُحدّث الرابط آلياً عند نشر نسخة جديدة.</p></article>
         <article class="download-card ios-card"><div class="card-top"><span class="platform-icon apple-icon" aria-hidden="true">●</span><span class="mini-badge outline">iPhone / iOS</span></div><h3>تطبيق الآيفون</h3><p>واجهة مخصصة لأجهزة iPhone عند إتاحة النسخة الرسمية.</p><div class="version-block"><span>حالة التوفر</span><strong id="ios-version">جارٍ التحقق…</strong><small id="ios-details">سيظهر الإصدار بمجرد نشره رسمياً</small></div><a id="ios-download" class="button card-button alt disabled" href="#التحميل" aria-disabled="true" tabindex="-1">غير متاح حالياً <span>↗</span></a><p class="card-footnote" id="ios-note">لن نعرض تنزيل iOS قبل وجود إصدار رسمي.</p></article>
       </div><div class="release-info"><span class="release-light" id="release-light"></span><span id="release-status" role="status" aria-live="polite">جارٍ التحقق من خدمة الإصدارات...</span><button class="text-refresh" type="button" id="refresh-versions">↻ تحديث الإصدارات</button></div>
