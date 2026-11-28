@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1226">
+  <meta name="description" content="نظام المحطات المستقل لنظام Windows — تحميل برنامج المحطات والمغذيات والمحولات للعمل دون إنترنت.">
+  <title>نظام المحطات بدون إنترنت | ELECTRIC SYSTEM</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .offline-outer{max-width:1130px;margin:0 auto;padding:30px 22px 90px}
+    .offline-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0 28px;flex-wrap:wrap}
+    .offline-brand{display:inline-flex;gap:12px;align-items:center;color:#eefaff;text-decoration:none;font:900 20px/1.2 Arial,sans-serif;direction:ltr}
+    .offline-brand img{width:47px;height:47px;object-fit:contain;border-radius:13px;background:#142b46;padding:6px}
+    .offline-back{color:#bde6f5;text-decoration:none;border:1px solid #3b5d7b;border-radius:12px;padding:10px 16px;background:#11223c;font-weight:800}
+    .offline-back:hover,.offline-help a:hover{color:white;border-color:#66d6ee}
+    .offline-hero{background:radial-gradient(ellipse at 5% 0%,#1b5268 0%,transparent 48%),linear-gradient(135deg,#142a44,#0c172a);border:1px solid #2c536d;border-radius:28px;padding:clamp(28px,5vw,61px);position:relative;overflow:hidden;box-shadow:0 24px 65px #030b1c66}
+    .offline-hero:after{content:'▦';font:bold 270px/1 Arial;position:absolute;inset:auto auto -80px -24px;color:#75dfee0b;pointer-events:none}
+    .offline-eyebrow{color:#90e6ed;font-size:13px;font-weight:900;letter-spacing:1px}
+    .offline-hero h1{color:#f5fbff;font-size:clamp(28px,4.4vw,49px);line-height:1.5;margin:15px 0 10px;position:relative;z-index:1}
+    .offline-hero h1 em{font-style:normal;color:#70dfe7}
+    .offline-lead{font-size:15px;line-height:2.15;color:#b2c4d9;max-width:730px;margin:0;position:relative;z-index:1}
+    .offline-pills{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 30px}
+    .offline-pills span{background:#143c4a;color:#b9f2eb;border:1px solid #27717c;border-radius:100px;padding:8px 13px;font-size:12px;font-weight:800}
+    .offline-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;position:relative;z-index:1}
+    .offline-main-button{display:inline-flex;align-items:center;justify-content:center;gap:11px;background:#68d7dd;color:#092c3b;padding:15px 25px;border-radius:14px;font-size:16px;font-weight:900;text-decoration:none;box-shadow:0 9px 24px #2e9fa630}
+    .offline-main-button:hover{background:#9df2f2}
+    .offline-secondary{display:inline-flex;align-items:center;justify-content:center;padding:14px 19px;border-radius:14px;color:#e0f4fd;border:1px solid #4b7890;text-decoration:none;font-weight:800}
+    .offline-small{font-size:12px;color:#91abc3;line-height:2;margin-top:19px}
+    .offline-head{color:#e7f4ff;font-size:25px;margin:49px 0 17px}
+    .offline-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .offline-tile{background:#13243a;border:1px solid #2b4662;border-radius:20px;padding:24px 23px;min-height:165px}
+    .offline-tile .icon{font-size:29px;color:#73dfeb}
+    .offline-tile h3{font-size:17px;color:#f3f9ff;margin:13px 0 8px}
+    .offline-tile p{color:#a4b9cc;font-size:13px;line-height:2.1;margin:0}
+    .offline-steps{counter-reset:phase;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .offline-step{background:#11253b;border:1px solid #28435e;border-radius:18px;padding:19px 20px;color:#c6d6e8;font-size:13px;line-height:2}
+    .offline-step b{display:block;color:#6fdae5;font-size:15px;margin-bottom:6px}
+    .offline-notice{border:1px solid #50627a;background:#131f34;border-radius:18px;padding:20px 23px;margin-top:26px;color:#a9bdd2;font-size:13px;line-height:2.1}
+    .offline-notice strong{color:#f8e0ac}
+    .offline-hash{font:11px/2 monospace;overflow-wrap:anywhere;color:#a6c4d9;direction:ltr;text-align:left;display:block;margin-top:5px}
+    .offline-footer{border-top:1px solid #294258;padding-top:24px;margin-top:57px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#9bb1c5;font-size:12px}
+    .offline-footer a{color:#76d8ec;text-decoration:none}
+    @media(max-width:760px){.offline-grid,.offline-steps{grid-template-columns:1fr}.offline-hero{padding:26px 22px}.offline-actions a{width:100%}.offline-top{padding-bottom:20px}}
+  </style>
+</head>
+<body>
+  <main class="offline-outer">
+    <header class="offline-top">
+      <a class="offline-brand" href="index.html" aria-label="ELECTRIC SYSTEM الصفحة الرئيسية"><img src="assets/logo.png" alt="شعار النظام"><span>ELECTRIC SYSTEM</span></a>
+      <a class="offline-back" href="index.html">↩ العودة إلى الموقع الرئيسي</a>
+    </header>
+    <section class="offline-hero" aria-labelledby="offline-title">
+      <div class="offline-eyebrow">برنامج Windows مستقل · تشغيل محلي</div>
+      <h1 id="offline-title">إدارة المحطات والمحولات <em>بدون إنترنت</em></h1>
+      <p class="offline-lead">نسخة مستقلة من نظام المحطات، مخصصة للعمل محلياً على الحاسبة دون الحاجة لاتصال دائم بالإنترنت. مناسبة لمن يحتاج قسم المحطات والمغذيات والمحولات في برنامج منفصل عن نظام إدارة الحوادث.</p>
+      <div class="offline-pills"><span>✓ Windows</span><span>✓ يعمل دون اتصال بعد التثبيت</span><span>✓ برنامج مستقل</span><span>✓ لا يعتمد على خدمة تحديثات الموقع</span></div>
+      <div class="offline-actions">
+        <a class="offline-main-button" href="https://github.com/ali-dhya96/electric_reparing/releases/download/offline-stations-v1/E_setup.exe" rel="noopener noreferrer" aria-label="تنزيل ملف تثبيت نظام المحطات E_setup.exe">⬇ تنزيل نظام المحطات — E_setup.exe</a>
+        <a class="offline-secondary" href="#طريقة-التثبيت">طريقة التثبيت ◀</a>
+      </div>
+      <p class="offline-small">نوع الملف: EXE · الحجم: 11.0 ميغابايت تقريباً · التنزيل من GitHub Releases. لا توجد اتصالات بخدمة الإصدارات أو فحص تحديثات من هذه الصفحة.</p>
+    </section>
+    <h2 class="offline-head">ما هو نظام المحطات المستقل؟</h2>
+    <section class="offline-grid" aria-label="مكونات البرنامج">
+      <article class="offline-tile"><span class="icon" aria-hidden="true">▣</span><h3>المحطات</h3><p>الوصول إلى معلومات المحطات وتنظيمها ضمن برنامج منفصل، وفق الوظائف المتاحة في النسخة.</p></article>
+      <article class="offline-tile"><span class="icon" aria-hidden="true">☷</span><h3>المغذيات</h3><p>استعراض المغذيات المرتبطة بالمحطات والتعامل مع بياناتها ضمن النظام المحلي.</p></article>
+      <article class="offline-tile"><span class="icon" aria-hidden="true">⬡</span><h3>المحولات</h3><p>الوصول إلى بيانات المحولات التابعة للمغذيات من دون الاعتماد على اتصال بالخادم أثناء العمل.</p></article>
+    </section>
+    <h2 class="offline-head" id="طريقة-التثبيت">طريقة تنزيل البرنامج وتثبيته</h2>
+    <section class="offline-steps" aria-label="خطوات التثبيت">
+      <div class="offline-step"><b>01 — تنزيل</b>اضغط زر «تنزيل نظام المحطات»، واحفظ ملف <span dir="ltr">E_setup.exe</span> على حاسبة Windows.</div>
+      <div class="offline-step"><b>02 — تثبيت</b>شغّل ملف التثبيت الذي نزلته من المصدر الرسمي، واتبع تعليمات التثبيت التي تظهر على الشاشة.</div>
+      <div class="offline-step"><b>03 — تشغيل محلي</b>بعد اكتمال التثبيت، افتح البرنامج للعمل على بيانات المحطات والمغذيات والمحولات دون اتصال بالإنترنت.</div>
+    </section>
+    <aside class="offline-notice">
+      <strong>ملاحظات قبل التثبيت:</strong> هذا برنامج مستقل عن ELECTRIC SYSTEM المتصل بالخادم. تنزيل ملف التثبيت من الموقع يحتاج الإنترنت مرة واحدة، أما عمل البرنامج بعد التثبيت فبحسب النسخة المحلية التي وفرتها الجهة الناشرة. لا تُنزل الملف من مصادر مجهولة، وراجع تحذيرات حماية Windows إن ظهرت.
+      <br><strong>بصمة ملف التثبيت SHA-256:</strong><code class="offline-hash">64ab48ccb45e9adc99d292060cf2c4d3e02f50c8b3d3344de806c6223a58f6c4</code>
+    </aside>
+    <footer class="offline-footer"><span>نظام المحطات المحلي · بوابة ELECTRIC SYSTEM</span><a href="index.html">العودة إلى الصفحة الرئيسية ↩</a></footer>
+  </main>
+</body>
+</html>
