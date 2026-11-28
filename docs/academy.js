@@ -1,0 +1,1 @@
+(()=>{const q=document.getElementById('academySearch');const cards=[...document.querySelectorAll('.academy-card')];const norm=s=>s.toLowerCase().replace(/[أإآ]/g,'ا').trim();q?.addEventListener('input',()=>{let n=0;for(const c of cards){c.hidden=!norm(c.dataset.search).includes(norm(q.value));if(!c.hidden)n++;}document.getElementById('academyEmpty').hidden=n>0;});})();
